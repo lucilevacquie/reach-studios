@@ -159,6 +159,11 @@ const sections = [
         img: "src",
       },
     ],
+    style: {
+      backgroundImage:
+        "https://ichef.bbci.co.uk/news/1536/cpsprodpb/fd9f/live/bbcbeda0-4ddc-11eb-8929-f9c569105915.jpg",
+      backgroundSize: "cover",
+    },
   },
   {
     title: "Society",
@@ -227,6 +232,11 @@ const sections = [
         img: "src",
       },
     ],
+    style: {
+      backgroundImage:
+        "https://ichef.bbci.co.uk/news/1536/cpsprodpb/5069/live/6ca297e0-66de-11eb-ad5c-31ca4e65adf8.jpg",
+      backgroundSize: "cover",
+    },
   },
   {
     title: "Lifestyle",
@@ -261,6 +271,11 @@ const sections = [
         img: "src",
       },
     ],
+    style: {
+      backgroundImage:
+        "https://ichef.bbci.co.uk/news/1536/cpsprodpb/47a1/live/49e2e7a0-2421-11eb-85c5-f555e0695185.jpg",
+      backgroundSize: "cover",
+    },
   },
   {
     title: "Behind the headlines",
@@ -312,6 +327,10 @@ const sections = [
         img: "src",
       },
     ],
+    style: {
+      backgroundImage: "https://ichef.bbci.co.uk/images/ic/raw/p03j4286.png",
+      backgroundSize: "cover",
+    },
   },
 ];
 

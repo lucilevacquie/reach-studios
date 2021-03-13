@@ -1,8 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -10,18 +12,25 @@ const useStyles = makeStyles({
     height: "100%",
   },
   media: {
-    height: 140,
+    height: (props) => props.largeHeadline,
   },
 });
 
-const CardBox = ({ subtitle, img, category }) => {
-  const classes = useStyles();
+const Category = styled.div`
+  padding: 16px;
+  flex: 0 0 auto;
+`;
+
+const CardBox = ({ subtitle, img, category, largeHeadline }) => {
+  const classes = useStyles({ largeHeadline });
   return (
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia className={classes.media} image={img} title={subtitle} />
-        <CardContent>{subtitle}</CardContent>
-        <div>{category}</div>
+        <CardContent>
+          <Typography component="h2">{subtitle}</Typography>
+        </CardContent>
+        <Category>{category}</Category>
       </CardActionArea>
     </Card>
   );

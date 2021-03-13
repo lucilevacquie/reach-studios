@@ -22,6 +22,7 @@ const Section = styled.div`
   background-color: lightgrey;
   font-size: 1.5rem;
   padding: 1rem;
+  box-sizing: border-box;
   background-image: url("${(props) => props.backgroundImage}");
   background-size: ${(props) => props.backgroundSize};
   height: ${(props) => props.sectionHeight}px;
@@ -46,8 +47,8 @@ const Main = () => {
         <div>Welcome to the BBC</div>
       </Welcome>
       {sections.map((section, index) => {
-        const isMultipleOfSeven = index % 7;
-        const firstHeadlineSize = isMultipleOfSeven ? 4 : 6;
+        const isMultipleOfSeven = !index % 7;
+        const firstHeadlineSize = isMultipleOfSeven ? 6 : 4;
         const sectionHeight = isMultipleOfSeven ? 450 : 390;
 
         return (
@@ -55,16 +56,21 @@ const Main = () => {
             key={section.title}
             backgroundImage={section.style?.backgroundImage}
             backgroundSize={section.style?.backgroundSize}
+            sectionHeight={sectionHeight}
           >
             <SectionTitle>{section.title}</SectionTitle>
-            <Grid container spacing={2} style={{ height: sectionHeight }}>
+            <Grid container spacing={2} style={{ height: "100%" }}>
               {section.headlines.map((headline, i) => (
-                <Grid item xs={i === 0 ? firstHeadlineSize : true}>
+                <Grid
+                  item
+                  key={headline.subtitle}
+                  xs={i === 0 ? firstHeadlineSize : true}
+                >
                   <CardBox
-                    key={headline.subtitle}
                     subtitle={headline.subtitle}
                     img={headline.img}
                     category={headline.category}
+                    largeHeadline={i === 0 && isMultipleOfSeven ? 240 : 140}
                   />
                 </Grid>
               ))}

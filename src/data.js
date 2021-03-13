@@ -3,6 +3,11 @@ const sections = [
     title: "",
     headlines: [
       {
+        subtitle: "Reach Studios Limited win the best overall business award",
+        img: "assets/reach.jpg",
+        category: "Sheffield",
+      },
+      {
         subtitle: "Sarah Everad body find confirmed by police",
         img: "assets/sarah.jpg",
         category: "London",
@@ -11,11 +16,6 @@ const sections = [
         subtitle: "Meghan complains to Ofcom over Morgan comments",
         img: "assets/meghan.jpg",
         category: "Entertainment & Arts",
-      },
-      {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "assets/football.jpg",
-        category: "Football",
       },
     ],
   },

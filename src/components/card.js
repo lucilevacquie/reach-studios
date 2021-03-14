@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import CardActions from "@material-ui/core/CardActions";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,12 +15,12 @@ const useStyles = makeStyles({
   media: {
     height: (props) => props.largeHeadline,
   },
+  actions: {
+    padding: "16px",
+  },
 });
 
-const Category = styled.div`
-  padding: 16px;
-  flex: 0 0 auto;
-`;
+const Category = styled.div``;
 
 const CardBox = ({ subtitle, img, category, largeHeadline }) => {
   const classes = useStyles({ largeHeadline });
@@ -30,8 +31,10 @@ const CardBox = ({ subtitle, img, category, largeHeadline }) => {
         <CardContent>
           <Typography component="h2">{subtitle}</Typography>
         </CardContent>
-        <Category>{category}</Category>
       </CardActionArea>
+      <CardActions className={classes.actions}>
+        <Category>{category}</Category>
+      </CardActions>
     </Card>
   );
 };

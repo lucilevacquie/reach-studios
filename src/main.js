@@ -11,17 +11,15 @@ const Container = styled.div`
 
 const Welcome = styled.div`
   font-size: 2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-left: 4rem;
   div {
     padding: 1rem 0px;
   }
 `;
 
 const Section = styled.div`
-  background-color: lightgrey;
-  font-size: 1.5rem;
-  padding: 2rem;
+  background-color: rgb(238, 238, 238);
+  padding: 2rem 4rem;
   box-sizing: border-box;
   background-image: url("${(props) => props.backgroundImage}");
   background-size: ${(props) => props.backgroundSize};

@@ -45,7 +45,43 @@ const dataNavbar = [
     id: "CBeebies",
     src: "",
     href: "/",
-    backgroundColor: "yellow",
+    backgroundColor: "purple",
+  },
+  {
+    id: "Food",
+    src: "",
+    href: "/",
+    backgroundColor: "#c84f61",
+  },
+  {
+    id: "Bitesize",
+    src: "",
+    href: "/",
+    backgroundColor: "turquoise",
+  },
+  {
+    id: "Arts",
+    src: "",
+    href: "/",
+    backgroundColor: "coral",
+  },
+  {
+    id: "Taster",
+    src: "",
+    href: "/",
+    backgroundColor: "indigo",
+  },
+  {
+    id: "Local",
+    src: "",
+    href: "/",
+    backgroundColor: "cyan",
+  },
+  {
+    id: "Three",
+    src: "",
+    href: "/",
+    backgroundColor: "lightgreen",
   },
 ];
 
@@ -53,7 +89,7 @@ const getDataNavbar = async () =>
   new Promise((resolve) => {
     setTimeout(() => {
       return resolve(dataNavbar);
-    }, 1000);
+    }, 0);
   });
 
 export default getDataNavbar;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import getData from "./data";
-import CardBox from "./components/card";
+import getData from "./dataHeadlines";
+import CardBox from "./main-components/card";
 import Grid from "@material-ui/core/Grid";
 
 const Container = styled.div`

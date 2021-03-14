@@ -24,12 +24,18 @@ const BoxContent = styled.div`
   padding: 0.05rem 0.875rem 0.05rem 0.875rem;
 `;
 
+const Text = styled.div`
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const Search = () => {
   return (
     <Box>
       <BoxContent>
         <SearchIcon style={{ height: "2em" }} />
-        <div>Search</div>
+        <Text>Search</Text>
       </BoxContent>
     </Box>
   );

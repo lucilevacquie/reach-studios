@@ -36,7 +36,11 @@ const Navbar = () => {
     };
     fetch();
   }, []);
+
   const [isDropdownActive, setIsDropdownActive] = useState(false);
+
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
 
   return (
     <Container>
@@ -60,6 +64,7 @@ const Navbar = () => {
           <Search backgroundColor={"black"} href="/" />
         </Nav>
       </BorderBottom>
+
       {isDropdownActive && <Dropdown />}
     </Container>
   );

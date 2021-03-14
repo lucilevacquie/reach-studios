@@ -21,7 +21,7 @@ const Welcome = styled.div`
 const Section = styled.div`
   background-color: lightgrey;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
   background-image: url("${(props) => props.backgroundImage}");
   background-size: ${(props) => props.backgroundSize};
@@ -61,11 +61,7 @@ const Main = () => {
             <SectionTitle>{section.title}</SectionTitle>
             <Grid container spacing={2} style={{ height: "100%" }}>
               {section.headlines.map((headline, i) => (
-                <Grid
-                  item
-                  key={headline.subtitle}
-                  xs={i === 0 ? firstHeadlineSize : true}
-                >
+                <Grid item key={i} xs={i === 0 ? firstHeadlineSize : true}>
                   <CardBox
                     subtitle={headline.subtitle}
                     img={headline.img}

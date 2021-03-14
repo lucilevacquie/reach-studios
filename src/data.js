@@ -23,16 +23,19 @@ const sections = [
     title: "More top stories",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
     style: {
@@ -45,16 +48,19 @@ const sections = [
     title: "Coronavirus pandemic",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -62,16 +68,19 @@ const sections = [
     title: "New headlines",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -79,16 +88,19 @@ const sections = [
     title: "Sport headlines",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -96,16 +108,19 @@ const sections = [
     title: "Around the UK",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -113,16 +128,19 @@ const sections = [
     title: "3 things we love today",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -130,16 +148,19 @@ const sections = [
     title: "Entertainment news",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -147,16 +168,19 @@ const sections = [
     title: "Talked about TV",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
     style: {
@@ -169,16 +193,19 @@ const sections = [
     title: "Society",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -186,16 +213,19 @@ const sections = [
     title: "Real-life stories",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -203,16 +233,19 @@ const sections = [
     title: "You might have missed",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -220,16 +253,19 @@ const sections = [
     title: "Food",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
     style: {
@@ -242,16 +278,19 @@ const sections = [
     title: "Lifestyle",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -259,16 +298,19 @@ const sections = [
     title: "This week in sport",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
     style: {
@@ -281,16 +323,19 @@ const sections = [
     title: "Behind the headlines",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -298,16 +343,19 @@ const sections = [
     title: "Time well spent",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "./assets/sarah.jpg",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "./assets/meghan.jpg",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "./assets/football.jpeg",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
   },
@@ -315,16 +363,19 @@ const sections = [
     title: "Best of BBC Three",
     headlines: [
       {
-        subtitle: "Sarah Everad body find confirmed by police",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/bigben.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "Meghan complains to Ofcom over Morgan comments",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/pisa-tower.jpg",
+        category: "Lorem ipsum",
       },
       {
-        subtitle: "BBC satarical comedy The Mash Report axed",
-        img: "src",
+        subtitle: "Lorem ipsum dolor sit amet",
+        img: "assets/eiffel-tower.jpg",
+        category: "Lorem ipsum",
       },
     ],
     style: {

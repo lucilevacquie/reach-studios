@@ -11,65 +11,77 @@ const data = [
     id: "Sign in",
     src: "",
     href: "/",
-    icon: <AccountCircleIcon />,
+    icon: <AccountCircleIcon style={{ height: "0.8em" }} />,
+    backgroundColor: "blue",
   },
   {
     id: "",
     src: "",
     href: "/",
-    icon: <NotificationsIcon />,
+    icon: <NotificationsIcon style={{ height: "0.8em" }} />,
+    backgroundColor: "blue",
   },
   {
     id: "Home",
     src: "",
     href: "/",
+    backgroundColor: "navy",
   },
   {
     id: "News",
     src: "",
     href: "/",
+    backgroundColor: "red",
   },
   {
     id: "Sport",
     src: "",
     href: "/",
+    backgroundColor: "gold",
   },
   {
     id: "Weather",
     src: "",
     href: "/",
+    backgroundColor: "lightblue",
   },
   {
     id: "iPlayer",
     src: "",
     href: "/",
+    backgroundColor: "pink",
   },
   {
     id: "Sounds",
     src: "",
     href: "/",
+    backgroundColor: "orange",
   },
   {
     id: "CBBC",
     src: "",
     href: "/",
+    backgroundColor: "green",
   },
   {
     id: "CBeebies",
     src: "",
     href: "/",
+    backgroundColor: "yellow",
   },
   {
     id: "More",
     src: "",
     href: "/",
-    icon: <ArrowDropDownIcon />,
+    icon: <ArrowDropDownIcon style={{ height: "0.8em" }} />,
+    backgroundColor: "black",
   },
   {
     id: "Search",
     src: "",
     href: "/",
-    icon: <SearchIcon />,
+    icon: <SearchIcon style={{ height: "0.8em" }} />,
+    backgroundColor: "black",
   },
 ];
 
@@ -81,10 +93,29 @@ const Container = styled.div`
 
 const Box = styled.a`
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-right: solid gray 1px;
   justify-content: center;
-  padding: 7px;
+  :hover {
+    background-color: ${(props) => props.backgroundColor};
+    cursor: pointer;
+  }
+`;
+
+const Color = styled.div`
+  display: flex;
+  width: 100%;
+  height: 4px;
+`;
+
+const IconAndTitle = styled.div`
+  align-items: end;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+  padding-top: 10px;
 `;
 
 const LogoImgWrapper = styled.div`
@@ -106,9 +137,12 @@ const Navbar = () => {
         </LogoImgWrapper>
       </Box>
       {data.map((item) => (
-        <Box key={item.id}>
-          {item.icon}
-          {item.id}
+        <Box key={item.id} backgroundColor={item.backgroundColor}>
+          <IconAndTitle>
+            {item.icon}
+            {item.id}
+          </IconAndTitle>
+          <Color />
         </Box>
       ))}
     </Container>

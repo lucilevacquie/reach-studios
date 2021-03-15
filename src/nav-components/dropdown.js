@@ -10,6 +10,7 @@ const Container = styled.div`
 
 const Links = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Link = styled.div`
@@ -34,22 +35,24 @@ const Link = styled.div`
 const CloseButton = styled.button`
   background-color: transparent;
   border: none;
+  height: 55%;
   :hover {
     color: white;
     background-color: black;
   }
 `;
 
-const Dropdown = ({ onClick }) => {
+const Dropdown = ({ onClick, array }) => {
   return (
     <Container>
       <Links>
-        <Link>
-          <a href="/">Blablabla</a>
-        </Link>
-        <Link>
-          <a href="/">Blablabla</a>
-        </Link>
+        {array.map((item) => {
+          return (
+            <Link key={item.id}>
+              <a href={item.href}>{item.id}</a>
+            </Link>
+          );
+        })}
       </Links>
       <CloseButton onClick={onClick}>
         <CloseIcon />

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
-import getDataNavbar from "./dataNavbar";
+import dataNavbar from "./dataNavbar";
 
 import NavLink from "./nav-components/navlink";
 import NavButton from "./nav-components/navbutton";
@@ -27,35 +27,53 @@ const Nav = styled.nav`
   padding: 0 2rem;
 `;
 
-const Navbar = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    const fetch = async () => {
-      const response = await getDataNavbar();
-      setData(response);
-    };
-    fetch();
-  }, []);
+const MapLinks = styled.div`
+  display: flex;
+  width: auto;
+`;
 
+const Navbar = () => {
   const [isDropdownActive, setIsDropdownActive] = useState(false);
 
-  const windowWidth = window.innerWidth;
-  console.log(windowWidth);
+  const navLinks = useRef("");
+  const navbar = useRef("");
+
+  const arrayNavbar = dataNavbar;
+
+  const [arrayDropdown, setArrayDropdown] = useState([]);
+
+  useEffect(() => {
+    const pushToDropdown = () => {
+      const windowWidth = window.innerWidth;
+      const navbarWidth = navbar.current.clientWidth;
+
+      if (windowWidth < navbarWidth) {
+        //take the last element of the navbar array
+        //and store it in a variable
+        const item = arrayNavbar.pop();
+        //add it in the dropdown array
+        setArrayDropdown((current) => [...current, item]);
+      }
+    };
+    pushToDropdown();
+  }, [arrayNavbar, setArrayDropdown, arrayDropdown]);
 
   return (
     <Container>
-      <BorderBottom>
+      <BorderBottom ref={navbar}>
         <Nav>
           <Logo />
           <SpecialLink />
-          {data.map((item) => (
-            <NavLink
-              key={item.id}
-              backgroundColor={item.backgroundColor}
-              href={item.href}
-              id={item.id}
-            />
-          ))}
+          <MapLinks ref={navLinks}>
+            {dataNavbar.map((item) => (
+              <NavLink
+                key={item.id}
+                backgroundColor={item.backgroundColor}
+                href={item.href}
+                id={item.id}
+              />
+            ))}
+          </MapLinks>
 
           <NavButton
             onClick={() => setIsDropdownActive(!isDropdownActive)}
@@ -65,7 +83,7 @@ const Navbar = () => {
         </Nav>
       </BorderBottom>
 
-      {isDropdownActive && <Dropdown />}
+      {isDropdownActive && <Dropdown array={arrayDropdown} />}
     </Container>
   );
 };

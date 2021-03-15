@@ -28,9 +28,9 @@ const BoxContent = styled.div`
   padding: 0.05rem 0.875rem 0.05rem 0.875rem;
 `;
 
-const NavLink = ({ backgroundColor, key, id, href }) => {
+const NavLink = ({ backgroundColor, id, href }) => {
   return (
-    <Box backgroundColor={backgroundColor} key={key} href={href}>
+    <Box backgroundColor={backgroundColor} href={href}>
       <BoxContent>{id}</BoxContent>
     </Box>
   );

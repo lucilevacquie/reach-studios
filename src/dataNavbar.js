@@ -85,11 +85,4 @@ const dataNavbar = [
   },
 ];
 
-const getDataNavbar = async () =>
-  new Promise((resolve) => {
-    setTimeout(() => {
-      return resolve(dataNavbar);
-    }, 0);
-  });
-
-export default getDataNavbar;
+export default dataNavbar;

@@ -25,6 +25,9 @@ const Nav = styled.nav`
   display: flex;
   width: 100%;
   padding: 0 2rem;
+  @media screen and (max-width: 600px) {
+    padding: 0rem 0.5rem;
+  }
 `;
 
 const MapLinks = styled.div`
@@ -50,9 +53,9 @@ const Navbar = () => {
       if (windowWidth < navbarWidth) {
         //take the last element of the navbar array
         //and store it in a variable
-        const item = arrayNavbar.pop();
+        const link = arrayNavbar.pop();
         //add it in the dropdown array
-        setArrayDropdown((current) => [...current, item]);
+        setArrayDropdown((current) => [...current, link]);
       }
     };
     pushToDropdown();
@@ -83,7 +86,12 @@ const Navbar = () => {
         </Nav>
       </BorderBottom>
 
-      {isDropdownActive && <Dropdown array={arrayDropdown} />}
+      {isDropdownActive && (
+        <Dropdown
+          onClick={() => setIsDropdownActive(!isDropdownActive)}
+          array={arrayDropdown}
+        />
+      )}
     </Container>
   );
 };

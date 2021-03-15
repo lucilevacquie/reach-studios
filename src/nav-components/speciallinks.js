@@ -33,6 +33,14 @@ const SignInContent = styled.div`
   width: 100%;
   justify-content: center;
   padding: 0.05rem 5rem 0.05rem 0.875rem;
+  @media screen and (max-width: 1008px) {
+    padding: 1rem;
+  }
+  div {
+    @media screen and (max-width: 1008px) {
+      display: none;
+    }
+  }
 `;
 
 const SpecialLink = () => {

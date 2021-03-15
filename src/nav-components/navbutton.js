@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 const Button = styled.button`
-  width: 10%;
+  width: auto;
   border: none;
   border-right: 1px solid rgb(186, 186, 186);
   background-color: white;

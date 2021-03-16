@@ -6,6 +6,7 @@ import Banner from "./main-components/banner.js";
 import Grid from "@material-ui/core/Grid";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Lottery from "./main-components/lottery";
+import Other from "./main-components/other";
 
 const Container = styled.div`
   display: grid;
@@ -42,6 +43,8 @@ const Section = styled.div`
   }
   @media screen and (max-width: 600px) {
     padding: 2rem 0.5rem;
+    background-image: url("");
+    background-size: 0;
   }
 `;
 
@@ -117,6 +120,7 @@ const Main = () => {
         );
       })}
       <Lottery />
+      <Other />
     </Container>
   );
 };

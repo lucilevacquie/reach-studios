@@ -20,7 +20,10 @@ const useStyles = makeStyles({
   },
 });
 
-const Category = styled.div``;
+const Category = styled.div`
+  font-size: 0.8rem;
+  color: grey;
+`;
 
 const CardBox = ({ subtitle, img, category, largeHeadline }) => {
   const classes = useStyles({ largeHeadline });

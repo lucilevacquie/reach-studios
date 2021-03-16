@@ -1,6 +1,7 @@
 const sections = [
   {
     title: "",
+    arrow: false,
     headlines: [
       {
         subtitle: "Reach Studios Limited win the best overall business award",
@@ -21,6 +22,7 @@ const sections = [
   },
   {
     title: "More top stories",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -46,6 +48,7 @@ const sections = [
   },
   {
     title: "Coronavirus pandemic",
+    arrow: true,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -66,6 +69,7 @@ const sections = [
   },
   {
     title: "New headlines",
+    arrow: true,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -86,6 +90,7 @@ const sections = [
   },
   {
     title: "Sport headlines",
+    arrow: true,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -106,6 +111,7 @@ const sections = [
   },
   {
     title: "Around the UK",
+    arrow: true,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -126,6 +132,7 @@ const sections = [
   },
   {
     title: "3 things we love today",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -153,6 +160,7 @@ const sections = [
   },
   {
     title: "Entertainment news",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -173,6 +181,7 @@ const sections = [
   },
   {
     title: "Talked about TV",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -198,6 +207,7 @@ const sections = [
   },
   {
     title: "Society",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -218,6 +228,7 @@ const sections = [
   },
   {
     title: "Real-life stories",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -238,6 +249,7 @@ const sections = [
   },
   {
     title: "You might have missed",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -258,6 +270,7 @@ const sections = [
   },
   {
     title: "Food",
+    arrow: true,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -283,6 +296,7 @@ const sections = [
   },
   {
     title: "Lifestyle",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -303,6 +317,7 @@ const sections = [
   },
   {
     title: "This week in sport",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -328,6 +343,7 @@ const sections = [
   },
   {
     title: "Behind the headlines",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -348,6 +364,7 @@ const sections = [
   },
   {
     title: "Time well spent",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",
@@ -368,6 +385,7 @@ const sections = [
   },
   {
     title: "Best of BBC Three",
+    arrow: false,
     headlines: [
       {
         subtitle: "Lorem ipsum dolor sit amet",

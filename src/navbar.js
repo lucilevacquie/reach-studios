@@ -16,9 +16,9 @@ const Container = styled.div`
 `;
 
 const BorderBottom = styled.div`
-  border-bottom: 1px solid rgb(186, 186, 186);
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
 `;
 
 const Nav = styled.nav`

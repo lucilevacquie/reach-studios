@@ -22,8 +22,6 @@ const data = [
   },
 ];
 
-const Container = styled.div``;
-
 const Grid = styled.div`
   display: grid;
   grid-template-rows: repeat(3, 33%);
@@ -40,8 +38,6 @@ const Section = styled.div`
     flex-direction: column;
   }
 `;
-
-const Title = styled.div``;
 
 const Links = styled.div`
   @media screen and (max-width: 600px) {
@@ -63,12 +59,12 @@ const Link = styled.a`
 
 const Other = () => {
   return (
-    <Container>
+    <div>
       <Grid>
         {data.map((section) => {
           return (
             <Section key={section.title}>
-              <Title>{section.title}</Title>
+              <div>{section.title}</div>
               <Links>
                 {section.links.map((item) => {
                   return (
@@ -82,7 +78,7 @@ const Other = () => {
           );
         })}
       </Grid>
-    </Container>
+    </div>
   );
 };
 

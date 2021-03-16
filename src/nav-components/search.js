@@ -3,13 +3,13 @@ import styled from "styled-components";
 import SearchIcon from "@material-ui/icons/Search";
 
 const Box = styled.a`
-  text-decoration: none;
-  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid rgb(186, 186, 186);
   justify-content: center;
+  border-right: 1px solid rgb(186, 186, 186);
+  color: black;
+  text-decoration: none;
   :hover {
     background-image: linear-gradient(white, white, white, black);
     cursor: pointer;
@@ -17,10 +17,10 @@ const Box = styled.a`
 `;
 
 const BoxContent = styled.div`
-  align-items: center;
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 0.05rem 0.875rem 0.05rem 0.875rem;
 `;
 

@@ -3,13 +3,13 @@ import styled from "styled-components";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
 const Button = styled.button`
-  width: auto;
-  border: none;
-  border-right: 1px solid rgb(186, 186, 186);
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
+  border-right: 1px solid rgb(186, 186, 186);
+  border: none;
+  background-color: white;
   :hover {
     background-image: linear-gradient(
       white,

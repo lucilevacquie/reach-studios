@@ -20,8 +20,8 @@ const Link = styled.div`
   padding-left: 4px;
   padding-bottom: 6px;
   :hover {
-    color: white;
     background-color: black;
+    color: white;
   }
   a {
     text-decoration: none;
@@ -33,12 +33,12 @@ const Link = styled.div`
 `;
 
 const CloseButton = styled.button`
-  background-color: transparent;
-  border: none;
   height: 55%;
+  border: none;
+  background-color: transparent;
   :hover {
-    color: white;
     background-color: black;
+    color: white;
   }
 `;
 

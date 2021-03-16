@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import Lottery from "./main-components/lottery";
 import Other from "./main-components/other";
+import BbcIPlayer from "./main-components/bbciplayer";
 
 const Container = styled.div`
   display: grid;
@@ -26,12 +27,12 @@ const Welcome = styled.div`
 `;
 
 const Section = styled.div`
-  background-color: rgb(238, 238, 238);
-  padding: 2rem 4rem;
+  height: auto;
   box-sizing: border-box;
+  background-color: rgb(238, 238, 238);
   background-image: url("${(props) => props.backgroundImage}");
   background-size: ${(props) => props.backgroundSize};
-  height: auto;
+  padding: 2rem 4rem;
   @media screen and (max-width: 1280px) {
     padding: 2rem 3rem;
   }
@@ -42,15 +43,15 @@ const Section = styled.div`
     padding: 2rem 1rem;
   }
   @media screen and (max-width: 600px) {
-    padding: 2rem 0.5rem;
     background-image: url("");
     background-size: 0;
+    padding: 2rem 0.5rem;
   }
 `;
 
 const SectionTitle = styled.div`
-  font-size: 1.5rem;
   display: flex;
+  font-size: 1.5rem;
   padding: 0.5rem 0;
   @media screen and (max-width: 600px) {
     font-size: 1.25rem;
@@ -95,7 +96,7 @@ const Main = () => {
           >
             <SectionTitle>
               {section.title}
-              <ArrowForwardIosIcon />
+              {section.arrow === true && <ArrowForwardIosIcon />}
             </SectionTitle>
 
             <Grid container spacing={2}>
@@ -121,6 +122,7 @@ const Main = () => {
       })}
       <Lottery />
       <Other />
+      <BbcIPlayer />
     </Container>
   );
 };

@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Box = styled.a`
-  text-decoration: none;
-  color: black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-right: 1px solid rgb(186, 186, 186);
-  justify-content: center;
+  color: black;
+  text-decoration: none;
   :hover {
     background-image: linear-gradient(
       white,
@@ -21,10 +21,10 @@ const Box = styled.a`
 `;
 
 const BoxContent = styled.div`
-  align-items: center;
   display: flex;
-  width: 100%;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 0.05rem 0.875rem 0.05rem 0.875rem;
 `;
 

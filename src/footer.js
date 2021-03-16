@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import data from "./dataNavbar";
+import dataNav from "./dataNavbar";
 
 const PolicyLinks = [
   {
@@ -42,11 +42,11 @@ const PolicyLinks = [
 ];
 
 const Container = styled.div`
-  background-color: black;
-  color: lightgray;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  background-color: rgb(40, 40, 40);
+  color: lightgray;
 `;
 
 const Wrapper = styled.div`
@@ -55,6 +55,10 @@ const Wrapper = styled.div`
   @media screen and (max-width: 1280px) {
     max-width: 63rem;
   }
+  @media screen and (max-width: 900px) {
+    max-width: 100%;
+    margin: 0;
+  }
 `;
 
 const Plan = styled.div`
@@ -62,11 +66,13 @@ const Plan = styled.div`
   font-weight: 700;
 `;
 
+const columnWidth = "5.625rem";
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 8rem);
   grid-column-gap: 2.5rem;
-  justify-content: center;
+  padding-left: 1rem;
   div {
     padding: 0.75rem 0px;
   }
@@ -78,27 +84,27 @@ const Grid = styled.div`
     }
   }
   @media screen and (max-width: 1280px) {
-    grid-template-columns: repeat(7, 5.625rem);
+    grid-template-columns: repeat(7, ${columnWidth});
   }
   @media screen and (max-width: 900px) {
-    grid-template-columns: repeat(5, 5.625rem);
+    grid-template-columns: repeat(5, ${columnWidth});
   }
   @media screen and (max-width: 642px) {
-    grid-template-columns: repeat(4, 5.625rem);
+    grid-template-columns: repeat(4, ${columnWidth});
   }
   @media screen and (max-width: 422px) {
-    grid-template-columns: repeat(3, 5.625rem);
+    grid-template-columns: repeat(3, ${columnWidth});
   }
   @media screen and (max-width: 334px) {
-    grid-template-columns: repeat(2, 5.625rem);
+    grid-template-columns: repeat(2, ${columnWidth});
   }
 `;
 
 const Policies = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 6rem;
   font-weight: 700;
+  padding: 10px 15px;
   div {
     padding: 5px 20px 10px 0;
     a {
@@ -109,10 +115,13 @@ const Policies = styled.div`
       }
     }
   }
+  @media screen and (max-width: 900px) {
+    padding: 10px 1rem;
+  }
 `;
 
 const Final = styled.div`
-  padding: 10px 6rem;
+  padding: 10px;
 `;
 
 const Footer = () => {
@@ -121,20 +130,20 @@ const Footer = () => {
       <Wrapper>
         <Plan>
           <Grid>
-            {data.map((item) => {
+            {dataNav.map((navlink) => {
               return (
-                <div key={item.id}>
-                  <a href={item.href}>{item.id}</a>
+                <div key={navlink.id}>
+                  <a href={navlink.href}>{navlink.id}</a>
                 </div>
               );
             })}
           </Grid>
         </Plan>
         <Policies>
-          {PolicyLinks.map((item) => {
+          {PolicyLinks.map((link) => {
             return (
-              <div>
-                <a href={item.href}>{item.id}</a>
+              <div key={link.id}>
+                <a href={link.href}>{link.id}</a>
               </div>
             );
           })}

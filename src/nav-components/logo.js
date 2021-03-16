@@ -3,13 +3,13 @@ import styled from "styled-components";
 import BBCLogo from "../assets/BBC_logo.png";
 
 const Box = styled.a`
-  text-decoration: none;
-  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid rgb(186, 186, 186);
   justify-content: center;
+  border-right: 1px solid rgb(186, 186, 186);
+  color: black;
+  text-decoration: none;
   :hover {
     cursor: pointer;
   }

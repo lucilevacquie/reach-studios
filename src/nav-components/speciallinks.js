@@ -2,16 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-// import SearchIcon from "@material-ui/icons/Search";
 
 const Box = styled.a`
-  text-decoration: none;
-  color: black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-right: 1px solid rgb(186, 186, 186);
-  justify-content: center;
+  color: black;
+  text-decoration: none;
   :hover {
     background-image: linear-gradient(white, white, white, blue);
     cursor: pointer;
@@ -19,19 +18,19 @@ const Box = styled.a`
 `;
 
 const BoxContent = styled.div`
-  align-items: center;
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 0.05rem ${(props) => (props.paddingRight ? "5rem" : "0.875rem")}
     0.05rem 0.875rem;
 `;
 
 const SignInContent = styled.div`
-  align-items: center;
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 0.05rem 5rem 0.05rem 0.875rem;
   @media screen and (max-width: 1008px) {
     padding: 1rem;

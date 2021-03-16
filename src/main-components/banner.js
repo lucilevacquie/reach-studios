@@ -7,10 +7,6 @@ const Container = styled.div`
   box-sizing: border-box;
   height: 440px;
   padding: 2rem 3rem;
-  @media screen and (max-width: 1280px) {
-    padding: 2rem 3rem;
-    /* max-width: 63rem; */
-  }
   @media screen and (max-width: 900px) {
     padding: 1rem;
   }
@@ -23,33 +19,33 @@ const Container = styled.div`
 `;
 
 const Background = styled.div`
+  position: relative;
   display: flex;
   height: 100%;
   width: 100%;
-  position: relative;
 `;
 
 const TextContainer = styled.div`
   position: absolute;
-  width: 50%;
-  height: 100%;
-  color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  width: 50%;
   z-index: 1;
+  color: lightgray;
   @media screen and (max-width: 900px) {
-    width: 100%;
     justify-content: end;
+    width: 100%;
   }
 `;
 
 const Catch = styled.div`
+  width: fit-content;
   box-sizing: border-box;
   border: 1px solid lightgray;
-  color: black;
   background-color: lightgray;
-  width: fit-content;
+  color: black;
   padding: 2px;
 `;
 
@@ -66,12 +62,10 @@ const Title = styled.a`
   }
 `;
 
-const Subtitle = styled.div``;
-
 const Line = styled.div`
+  width: fit-content;
   border-top: solid lightgray 3px;
   margin-top: 2rem;
-  width: fit-content;
   @media screen and (max-width: 900px) {
     margin-top: 1rem;
   }
@@ -83,8 +77,8 @@ const Category = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  justify-content: end;
   display: flex;
+  justify-content: end;
   width: 100%;
   height: 380px;
   @media screen and (max-width: 900px) {
@@ -103,7 +97,7 @@ const Banner = ({ title, subtitle, img, category }) => {
         <TextContainer>
           <Catch>WHAT A MARVEL</Catch>
           <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
+          <div>{subtitle}</div>
           <Line>
             <Category>{category}</Category>
           </Line>

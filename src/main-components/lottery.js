@@ -3,10 +3,11 @@ import styled from "styled-components";
 import Balls from "../assets/lottery.jpg";
 
 const Container = styled.div`
+  height: 148px;
   background-image: url("https://ichef.bbci.co.uk/news/1536/cpsprodpb/06a5/live/edf98750-1930-11eb-85c5-f555e0695185.jpg");
   background-size: cover;
-  height: 148px;
   color: rgb(255, 255, 255);
+  padding: 0 2rem;
   @media screen and (max-width: 1130px) {
     height: 170px;
   }
@@ -15,21 +16,22 @@ const Container = styled.div`
   }
   @media screen and (max-width: 600px) {
     height: 262px;
+    padding: 0 1rem;
   }
 `;
 
 const Background = styled.div`
-  height: 100%;
   position: relative;
+  height: 100%;
   margin: auto;
 `;
 
 const ImgContainer = styled.div`
   position: absolute;
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: end;
+  height: 100%;
+  width: 100%;
   @media screen and (max-width: 600px) {
     align-items: end;
   }
@@ -45,25 +47,25 @@ const Img = styled.img`
 
 const TextContainer = styled.div`
   position: absolute;
-  width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 4rem;
-  margin-top: 1rem;
   z-index: 1;
+  width: 50%;
+  padding-left: 2rem;
+  padding-top: 1rem;
   @media screen and (max-width: 900px) {
-    width: 50%;
     justify-content: end;
+    width: 50%;
     padding: 0 1rem;
-    margin-left: 0;
+    padding-left: 0;
   }
   @media screen and (max-width: 600px) {
     width: auto;
-    padding: 1rem;
-    margin-left: 0;
     font-weight: 400;
+    padding: 1rem;
+    padding-left: 0;
   }
 `;
 
@@ -81,12 +83,12 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.375rem;
+  margin-bottom: 0.5rem;
 `;
 
-const ButtonContainer = styled.div`
+const LinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   @media screen and (max-width: 900px) {
@@ -97,13 +99,13 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const Button = styled.a`
-  display: flex;
+const Link = styled.a`
   position: absolute;
-  background-color: lightgray;
-  font-weight: 400;
-  color: rgb(0, 109, 239);
+  display: flex;
   width: fit-content;
+  background-color: lightgray;
+  color: rgb(0, 109, 239);
+  font-weight: 400;
   padding: 10px;
   :hover {
     text-decoration: underline;
@@ -124,9 +126,9 @@ const LotteryBanner = () => {
             See the latest results, inclufing Lotto, EuroMillions, Set For Life
             and Thunderball
           </Subtitle>
-          <ButtonContainer>
-            <Button>RESULTS</Button>
-          </ButtonContainer>
+          <LinkContainer>
+            <Link>RESULTS</Link>
+          </LinkContainer>
         </TextContainer>
       </Background>
     </Container>

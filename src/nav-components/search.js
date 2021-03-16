@@ -8,6 +8,7 @@ const Box = styled.a`
   align-items: center;
   justify-content: center;
   border-right: 1px solid rgb(186, 186, 186);
+  border-left: 1px solid rgb(186, 186, 186);
   color: black;
   text-decoration: none;
   :hover {

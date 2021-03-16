@@ -25,9 +25,15 @@ const data = [
 const Grid = styled.div`
   display: grid;
   grid-template-rows: repeat(3, 33%);
-  margin: 0 4rem;
+  padding-right: 0 4rem;
+  @media screen and (max-width: 1280px) {
+    padding: 0 3rem;
+  }
   @media screen and (max-width: 900px) {
-    margin: 0 1rem;
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 1rem;
   }
 `;
 
@@ -48,6 +54,7 @@ const Links = styled.div`
 const Link = styled.a`
   padding-left: 2rem;
   color: black;
+  font-weight: 700;
   :hover {
     color: rgb(0, 109, 239);
   }

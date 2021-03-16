@@ -7,7 +7,6 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
   width: auto;
-  border-right: 1px solid rgb(186, 186, 186);
   border: none;
   background-color: white;
   :hover {

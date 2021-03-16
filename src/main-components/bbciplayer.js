@@ -35,10 +35,7 @@ const Section = styled.div`
   box-sizing: border-box;
   background-image: url("https://ichef.bbci.co.uk/images/ic/raw/p08bd52y.png");
   background-size: cover;
-  padding: 2rem 4rem;
-  @media screen and (max-width: 1280px) {
-    padding: 2rem 3rem;
-  }
+  padding: 2rem 3rem;
   @media screen and (max-width: 900px) {
     padding: 2rem 2rem;
   }

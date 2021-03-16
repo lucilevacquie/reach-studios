@@ -32,10 +32,7 @@ const Section = styled.div`
   background-color: rgb(238, 238, 238);
   background-image: url("${(props) => props.backgroundImage}");
   background-size: ${(props) => props.backgroundSize};
-  padding: 2rem 4rem;
-  @media screen and (max-width: 1280px) {
-    padding: 2rem 3rem;
-  }
+  padding: 2rem 3rem;
   @media screen and (max-width: 900px) {
     padding: 2rem 2rem;
   }
@@ -76,7 +73,7 @@ const Main = () => {
       </Welcome>
 
       {sections.map((section, index) => {
-        const isMultipleOfSeven = !index % 7;
+        const isMultipleOfSix = !(index % 6);
         if (section.type === "banner") {
           return (
             <Banner
@@ -104,15 +101,15 @@ const Main = () => {
                 <Grid
                   item
                   key={i}
-                  md={isMultipleOfSeven ? (i === 0 ? 6 : 3) : 4}
-                  sm={isMultipleOfSeven ? (i === 0 ? 6 : 3) : 4}
-                  xs={isMultipleOfSeven ? (i === 0 ? 12 : 6) : 12}
+                  md={isMultipleOfSix ? (i === 0 ? 6 : 3) : 4}
+                  sm={isMultipleOfSix ? (i === 0 ? 6 : 3) : 4}
+                  xs={isMultipleOfSix ? (i === 0 ? 12 : 6) : 12}
                 >
                   <CardBox
                     subtitle={headline.subtitle}
                     img={headline.img}
                     category={headline.category}
-                    largeHeadline={i === 0 && isMultipleOfSeven ? 240 : 140}
+                    largeHeadline={i === 0 && isMultipleOfSix ? 240 : 140}
                   />
                 </Grid>
               ))}

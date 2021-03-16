@@ -72,7 +72,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 8rem);
   grid-column-gap: 2.5rem;
-  padding-left: 1rem;
+  margin: auto;
   div {
     padding: 0.75rem 0px;
   }
@@ -85,14 +85,17 @@ const Grid = styled.div`
   }
   @media screen and (max-width: 1280px) {
     grid-template-columns: repeat(7, ${columnWidth});
+    padding: 0 3rem;
   }
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(5, ${columnWidth});
+    padding: 0 2rem;
   }
-  @media screen and (max-width: 642px) {
+  @media screen and (max-width: 600px) {
     grid-template-columns: repeat(4, ${columnWidth});
+    padding: 0 1rem;
   }
-  @media screen and (max-width: 422px) {
+  @media screen and (max-width: 400px) {
     grid-template-columns: repeat(3, ${columnWidth});
   }
   @media screen and (max-width: 334px) {
@@ -104,7 +107,7 @@ const Policies = styled.div`
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
-  padding: 10px 15px;
+  padding: 1rem 3rem;
   div {
     padding: 5px 20px 10px 0;
     a {
@@ -116,7 +119,7 @@ const Policies = styled.div`
     }
   }
   @media screen and (max-width: 900px) {
-    padding: 10px 1rem;
+    padding: 10px 2rem;
   }
 `;
 

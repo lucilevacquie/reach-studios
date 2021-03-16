@@ -25,7 +25,7 @@ const Category = styled.div`
   color: grey;
 `;
 
-const CardBox = ({ subtitle, img, category, largeHeadline }) => {
+const CardBox = ({ subtitle, img, category, largeHeadline = 140 }) => {
   const classes = useStyles({ largeHeadline });
   return (
     <Card className={classes.root}>

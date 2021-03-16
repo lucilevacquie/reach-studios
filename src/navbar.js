@@ -54,8 +54,10 @@ const Navbar = () => {
         //take the last element of the navbar array
         //and store it in a variable
         const link = arrayNavbar.pop();
+        if (link) {
+          setArrayDropdown((current) => [...current, link]);
+        }
         //add it in the dropdown array
-        setArrayDropdown((current) => [...current, link]);
       }
     };
     pushToDropdown();

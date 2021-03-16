@@ -403,10 +403,6 @@ const sections = [
         category: "Lorem ipsum",
       },
     ],
-    style: {
-      backgroundImage: "https://ichef.bbci.co.uk/images/ic/raw/p03j4286.png",
-      backgroundSize: "cover",
-    },
   },
 ];
 

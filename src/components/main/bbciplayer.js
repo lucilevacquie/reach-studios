@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import CardBox from "./card";
+import Box from "@material-ui/core/box";
 
 const data = [
   {
@@ -49,10 +50,8 @@ const Section = styled.div`
   }
 `;
 
-const SectionTitle = styled.div`
-  display: flex;
+const SectionTitle = styled(Box)`
   font-size: 1.5rem;
-  padding: 0.5rem 0;
   @media screen and (max-width: 600px) {
     font-size: 1.25rem;
     color: lightgray;
@@ -62,7 +61,9 @@ const SectionTitle = styled.div`
 const BbcIPlayer = () => {
   return (
     <Section>
-      <SectionTitle>BBC iPlayer: Like nowhere else</SectionTitle>
+      <SectionTitle display="flex" py={1}>
+        BBC iPlayer: Like nowhere else
+      </SectionTitle>
       <Grid container spacing={2}>
         {data.map((item) => {
           return (

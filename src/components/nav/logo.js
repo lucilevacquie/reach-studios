@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BBCLogo from "../assets/BBC_logo.png";
+import BBCLogo from "../../assets/BBC_logo.png";
 
 const Box = styled.a`
   display: flex;

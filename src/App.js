@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Navbar from "./navbar";
-import Main from "./main";
-import Footer from "./footer";
+import Navbar from "./components/nav/navbar";
+import Main from "./components/main/main";
+import Footer from "./components/main/footer";
 
 const Container = styled.div`
   display: grid;

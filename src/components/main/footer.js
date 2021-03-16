@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import dataNav from "./dataNavbar";
+import dataNav from "../../data/dataNavbar";
+import Box from "@material-ui/core/box";
 
 const PolicyLinks = [
   {
@@ -66,11 +67,9 @@ const Plan = styled.div`
   font-weight: 700;
 `;
 
-const columnWidth = "5.625rem";
-
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(7, 8rem);
+  grid-template-columns: repeat(7, 1fr);
   grid-column-gap: 2.5rem;
   margin: auto;
   div {
@@ -84,28 +83,25 @@ const Grid = styled.div`
     }
   }
   @media screen and (max-width: 1280px) {
-    grid-template-columns: repeat(7, ${columnWidth});
     padding: 0 3rem;
   }
   @media screen and (max-width: 900px) {
-    grid-template-columns: repeat(5, ${columnWidth});
+    grid-template-columns: repeat(5, 1fr);
     padding: 0 2rem;
   }
   @media screen and (max-width: 600px) {
-    grid-template-columns: repeat(4, ${columnWidth});
+    grid-template-columns: repeat(4, 1fr);
     padding: 0 1rem;
   }
   @media screen and (max-width: 400px) {
-    grid-template-columns: repeat(3, ${columnWidth});
+    grid-template-columns: repeat(3, 1fr);
   }
   @media screen and (max-width: 334px) {
-    grid-template-columns: repeat(2, ${columnWidth});
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
-const Policies = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const Policies = styled(Box)`
   font-weight: 700;
   padding: 1rem 3rem;
   div {
@@ -124,7 +120,15 @@ const Policies = styled.div`
 `;
 
 const Final = styled.div`
-  padding: 10px;
+  @media screen and (max-width: 1280px) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Footer = () => {
@@ -142,7 +146,7 @@ const Footer = () => {
             })}
           </Grid>
         </Plan>
-        <Policies>
+        <Policies display="flex" flexWrap="wrap">
           {PolicyLinks.map((link) => {
             return (
               <div key={link.id}>

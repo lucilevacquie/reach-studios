@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import getData from "./dataHeadlines";
 import CardBox from "./main-components/card";
+import Banner from "./main-components/banner.js";
 import Grid from "@material-ui/core/Grid";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const Container = styled.div`
   display: grid;
   grid-template-rows: 5% repeat(18 auto);
+  font-family: "Roboto", sans-serif;
 `;
 
 const Welcome = styled.div`
@@ -39,7 +42,14 @@ const Section = styled.div`
   }
 `;
 
-const SectionTitle = styled.div``;
+const SectionTitle = styled.div`
+  font-size: 1.5rem;
+  display: flex;
+  padding: 0.5rem 0;
+  @media screen and (max-width: 600px) {
+    font-size: 1.25rem;
+  }
+`;
 
 const Main = () => {
   const [sections, setSections] = useState([]);
@@ -60,14 +70,27 @@ const Main = () => {
 
       {sections.map((section, index) => {
         const isMultipleOfSeven = !index % 7;
-
+        if (section.type === "banner") {
+          return (
+            <Banner
+              key={section.title}
+              title={section.title}
+              subtitle={section.subtitle}
+              img={section.img}
+              category={section.category}
+            />
+          );
+        }
         return (
           <Section
             key={section.title}
             backgroundImage={section.style?.backgroundImage}
             backgroundSize={section.style?.backgroundSize}
           >
-            <SectionTitle>{section.title}</SectionTitle>
+            <SectionTitle>
+              {section.title}
+              <ArrowForwardIosIcon />
+            </SectionTitle>
 
             <Grid container spacing={2}>
               {section.headlines.map((headline, i) => (

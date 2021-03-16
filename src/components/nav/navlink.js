@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 
 const Container = styled(Box)`
   border-right: 1px solid rgb(186, 186, 186);

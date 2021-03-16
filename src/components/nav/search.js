@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@material-ui/icons/Search";
-import Box from "@material-ui/core/box";
-import Hidden from "@material-ui/core/hidden";
+import Box from "@material-ui/core/Box";
+import Hidden from "@material-ui/core/Hidden";
 
 const Container = styled(Box)`
   border-right: 1px solid rgb(186, 186, 186);

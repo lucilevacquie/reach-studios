@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import CardBox from "./card";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 
 const data = [
   {

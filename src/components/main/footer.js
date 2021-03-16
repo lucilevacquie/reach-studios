@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import dataNav from "../../data/dataNavbar";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 
 const PolicyLinks = [
   {

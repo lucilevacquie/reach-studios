@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import CardBox from "./card";
-import Grid from "@material-ui/core/grid";
-import Box from "@material-ui/core/box";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const Container = styled.div`

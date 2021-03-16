@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import Hidden from "@material-ui/core/hidden";
+import Hidden from "@material-ui/core/Hidden";
 
 const Link = styled(Box)`
   border-right: 1px solid rgb(186, 186, 186);

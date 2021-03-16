@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Box from "@material-ui/core/box";
-import Grid from "@material-ui/core/grid";
+import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
 
 const data = [
   {

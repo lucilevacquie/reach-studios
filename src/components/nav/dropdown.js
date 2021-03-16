@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import CloseIcon from "@material-ui/icons/Close";
-import Box from "@material-ui/core/box";
-import Button from "@material-ui/core/button";
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 
 const Container = styled(Box)`
   border-bottom: 1px solid rgb(186, 186, 186);

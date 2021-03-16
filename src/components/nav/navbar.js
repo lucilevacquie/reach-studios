@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import dataNavbar from "../../data/dataNavbar";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 
 import NavLink from "./navlink";
 import MoreButton from "./morebutton";

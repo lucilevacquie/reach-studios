@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Balls from "../../assets/lottery.jpg";
-import Box from "@material-ui/core/box";
+import Box from "@material-ui/core/Box";
 
 const Container = styled(Box)`
   height: 200px;

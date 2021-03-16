@@ -27,8 +27,6 @@ const Background = styled.div`
   height: 100%;
   width: 100%;
   position: relative;
-  @media screen and (max-width: 900px) {
-  }
 `;
 
 const TextContainer = styled.div`

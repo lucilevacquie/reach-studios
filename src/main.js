@@ -5,6 +5,7 @@ import CardBox from "./main-components/card";
 import Banner from "./main-components/banner.js";
 import Grid from "@material-ui/core/Grid";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import Lottery from "./main-components/lottery";
 
 const Container = styled.div`
   display: grid;
@@ -14,9 +15,12 @@ const Container = styled.div`
 
 const Welcome = styled.div`
   font-size: 2rem;
-  padding-left: 4rem;
+  padding-left: 3rem;
   div {
     padding: 1rem 0px;
+  }
+  @media screen and (max-width: 600px) {
+    padding-left: 1rem;
   }
 `;
 
@@ -29,7 +33,6 @@ const Section = styled.div`
   height: auto;
   @media screen and (max-width: 1280px) {
     padding: 2rem 3rem;
-    max-width: 63rem;
   }
   @media screen and (max-width: 900px) {
     padding: 2rem 2rem;
@@ -113,6 +116,7 @@ const Main = () => {
           </Section>
         );
       })}
+      <Lottery />
     </Container>
   );
 };

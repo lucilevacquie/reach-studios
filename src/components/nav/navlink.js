@@ -5,7 +5,7 @@ import Box from "@material-ui/core/box";
 const Container = styled(Box)`
   border-right: 1px solid rgb(186, 186, 186);
   :hover {
-    box-shadow: 0px -15px 0px -9px ${(props) => props.backgroundColor} inset;
+    box-shadow: 0px -15px 0px -9px ${(props) => props.$backgroundColor} inset;
     cursor: pointer;
   }
   a {
@@ -20,7 +20,7 @@ const NavLink = ({ backgroundColor, id, href }) => {
       display="flex"
       alignItems="center"
       px={1.5}
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
     >
       <a href={href}>{id}</a>
     </Container>

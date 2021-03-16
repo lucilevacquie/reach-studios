@@ -43,22 +43,14 @@ const PolicyLinks = [
 ];
 
 const Container = styled.div`
+  box-sizing: border-box;
   width: 100%;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
   background-color: rgb(40, 40, 40);
+  padding: 1rem 3rem;
   color: lightgray;
-`;
-
-const Wrapper = styled.div`
-  max-width: 80rem;
-  margin: auto;
-  @media screen and (max-width: 1280px) {
-    max-width: 63rem;
-  }
   @media screen and (max-width: 900px) {
     max-width: 100%;
-    margin: 0;
   }
 `;
 
@@ -82,16 +74,11 @@ const Grid = styled.div`
       text-decoration: underline;
     }
   }
-  @media screen and (max-width: 1280px) {
-    padding: 0 3rem;
-  }
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(5, 1fr);
-    padding: 0 2rem;
   }
   @media screen and (max-width: 600px) {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 1rem;
   }
   @media screen and (max-width: 400px) {
     grid-template-columns: repeat(3, 1fr);
@@ -103,7 +90,7 @@ const Grid = styled.div`
 
 const Policies = styled(Box)`
   font-weight: 700;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   div {
     padding: 5px 20px 10px 0;
     a {
@@ -114,52 +101,35 @@ const Policies = styled(Box)`
       }
     }
   }
-  @media screen and (max-width: 900px) {
-    padding: 10px 2rem;
-  }
-`;
-
-const Final = styled.div`
-  @media screen and (max-width: 1280px) {
-    padding: 0 3rem;
-  }
-  @media screen and (max-width: 900px) {
-    padding: 0 2rem;
-  }
-  @media screen and (max-width: 600px) {
-    padding: 0 1rem;
-  }
 `;
 
 const Footer = () => {
   return (
     <Container>
-      <Wrapper>
-        <Plan>
-          <Grid>
-            {dataNav.map((navlink) => {
-              return (
-                <div key={navlink.id}>
-                  <a href={navlink.href}>{navlink.id}</a>
-                </div>
-              );
-            })}
-          </Grid>
-        </Plan>
-        <Policies display="flex" flexWrap="wrap">
-          {PolicyLinks.map((link) => {
+      <Plan>
+        <Grid>
+          {dataNav.map((navlink) => {
             return (
-              <div key={link.id}>
-                <a href={link.href}>{link.id}</a>
+              <div key={navlink.id}>
+                <a href={navlink.href}>{navlink.id}</a>
               </div>
             );
           })}
-        </Policies>
-        <Final>
-          © 2021 BBC. The BBC is not responsible for the content of external
-          sites.
-        </Final>
-      </Wrapper>
+        </Grid>
+      </Plan>
+      <Policies display="flex" flexWrap="wrap">
+        {PolicyLinks.map((link) => {
+          return (
+            <div key={link.id}>
+              <a href={link.href}>{link.id}</a>
+            </div>
+          );
+        })}
+      </Policies>
+      <div>
+        © 2021 BBC. The BBC is not responsible for the content of external
+        sites.
+      </div>
     </Container>
   );
 };

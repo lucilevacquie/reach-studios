@@ -26,9 +26,9 @@ const Navbar = () => {
   useEffect(() => {
     const pushToDropdown = () => {
       const windowWidth = window.innerWidth;
-      const navbarWidth = navbar.current.clientWidth;
+      const navbarWidth = navbar.current.offsetWidth;
 
-      if (windowWidth < navbarWidth) {
+      if (windowWidth < navbarWidth - 1) {
         //take the last element of the navbar array
         //and store it in a variable
         const link = arrayNavbar.pop();
@@ -42,27 +42,32 @@ const Navbar = () => {
   }, [arrayNavbar, setArrayDropdown, arrayDropdown]);
 
   return (
-    <Box display="flex" flexDirection="column" justifyContent="center">
-      <div ref={navbar}>
-        <Nav display="flex" px={2}>
-          <Logo />
-          <SpecialLink />
-          {dataNavbar.map((item) => (
-            <NavLink
-              key={item.id}
-              backgroundColor={item.backgroundColor}
-              href={item.href}
-              id={item.id}
-            />
-          ))}
-
-          <MoreButton
-            onClick={() => setIsDropdownActive(!isDropdownActive)}
-            backgroundColor={"black"}
+    <>
+      <Nav
+        boxSizing="border-box"
+        ref={navbar}
+        display="flex"
+        width="max-content"
+        minWidth="100%"
+        px={2}
+      >
+        <Logo />
+        <SpecialLink />
+        {dataNavbar.map((item) => (
+          <NavLink
+            key={item.id}
+            backgroundColor={item.backgroundColor}
+            href={item.href}
+            id={item.id}
           />
-          <Search backgroundColor={"black"} href="/" />
-        </Nav>
-      </div>
+        ))}
+
+        <MoreButton
+          onClick={() => setIsDropdownActive(!isDropdownActive)}
+          backgroundColor={"black"}
+        />
+        <Search backgroundColor={"black"} href="/" />
+      </Nav>
 
       {isDropdownActive && (
         <Dropdown
@@ -70,7 +75,7 @@ const Navbar = () => {
           array={arrayDropdown}
         />
       )}
-    </Box>
+    </>
   );
 };
 

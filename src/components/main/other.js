@@ -43,8 +43,7 @@ const Container = styled(Grid)`
       color: rgb(0, 109, 239);
     }
     @media screen and (max-width: 600px) {
-      padding-right: 1.5rem;
-      padding-left: 0;
+      padding-left: 1.5rem;
     }
   }
 `;
@@ -54,7 +53,7 @@ const Other = () => {
     <Container container direction="column">
       {data.map((section) => {
         return (
-          <Box key={section.title} display="flex" py={2}>
+          <Box key={section.title} display="flex" flexWrap="wrap" py={2}>
             <div>{section.title}</div>
             <Box>
               {section.links.map((item) => {

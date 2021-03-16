@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import CardBox from "./card";
 import Grid from "@material-ui/core/grid";
+import Box from "@material-ui/core/box";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const Container = styled.div`
@@ -24,10 +25,11 @@ const Container = styled.div`
   }
 `;
 
-const Title = styled.div`
-  display: flex;
+const Title = styled(Box)`
   font-size: 1.5rem;
   padding: 0.5rem 0;
+  text-decoration: none;
+  color: black;
   @media screen and (max-width: 600px) {
     font-size: 1.25rem;
   }
@@ -46,13 +48,19 @@ const Section = ({
       backgroundImage={backgroundImage}
       backgroundSize={backgroundSize}
     >
-      <Title>
+      <Title
+        display="flex"
+        alignItems="center"
+        component={arrow ? "a" : "div"}
+        href="/"
+      >
         {title}
-        {arrow === true && <ArrowForwardIosIcon />}
+        {arrow && <ArrowForwardIosIcon />}
       </Title>
       <Grid container spacing={2}>
         {headlines.map((headline, i) => (
           <Grid
+            key={i}
             item
             md={isMultipleOfSix ? (i === 0 ? 6 : 3) : 4}
             sm={isMultipleOfSix ? (i === 0 ? 6 : 3) : 4}

@@ -410,7 +410,7 @@ const getData = async () =>
   new Promise((resolve) => {
     setTimeout(() => {
       return resolve(sections);
-    }, 1000);
+    }, 0);
   });
 
 export default getData;

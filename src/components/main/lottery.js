@@ -22,6 +22,7 @@ const Img = styled.img`
 const TextContainer = styled(Box)`
   z-index: 1;
   width: 60%;
+  padding-left: 4rem;
   @media screen and (max-width: 1280px) {
     padding-left: 3rem;
   }

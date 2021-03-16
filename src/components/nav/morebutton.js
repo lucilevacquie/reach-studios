@@ -7,7 +7,7 @@ const Container = styled(Box)`
   border-right: 1px solid rgb(186, 186, 186);
   :hover {
     cursor: pointer;
-    box-shadow: 0px -15px 0px -9px ${(props) => props.backgroundColor} inset;
+    box-shadow: 0px -15px 0px -9px ${(props) => props.$backgroundColor} inset;
   }
 `;
 
@@ -17,7 +17,7 @@ const MoreButton = ({ backgroundColor, onClick }) => {
       display="flex"
       alignItems="center"
       padding={2}
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor}
       onClick={onClick}
     >
       More

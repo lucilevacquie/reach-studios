@@ -16,7 +16,7 @@ const MoreButton = ({ backgroundColor, onClick }) => {
     <Container
       display="flex"
       alignItems="center"
-      padding={2}
+      px={2}
       $backgroundColor={backgroundColor}
       onClick={onClick}
     >

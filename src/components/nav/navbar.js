@@ -25,10 +25,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const pushToDropdown = () => {
-      const windowWidth = window.innerWidth;
-      const navbarWidth = navbar.current.offsetWidth;
+      const windowWidth = document.body.clientWidth;
+      const navbarWidth = navbar.current.clientWidth;
 
-      if (windowWidth < navbarWidth - 1) {
+      if (navbarWidth > windowWidth) {
         //take the last element of the navbar array
         //and store it in a variable
         const link = arrayNavbar.pop();
@@ -50,6 +50,7 @@ const Navbar = () => {
         width="max-content"
         minWidth="100%"
         px={2}
+        justifyContent="center"
       >
         <Logo />
         <SpecialLink />
@@ -62,10 +63,12 @@ const Navbar = () => {
           />
         ))}
 
-        <MoreButton
-          onClick={() => setIsDropdownActive(!isDropdownActive)}
-          backgroundColor={"black"}
-        />
+        {arrayDropdown.length > 0 && (
+          <MoreButton
+            onClick={() => setIsDropdownActive(!isDropdownActive)}
+            backgroundColor={"black"}
+          />
+        )}
         <Search backgroundColor={"black"} href="/" />
       </Nav>
 
